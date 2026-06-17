@@ -73,8 +73,13 @@ nav {
   display: flex; align-items: center;
   padding: 120px 2rem 80px; position: relative; overflow: hidden;
 }
+.hero::before {
+  content:''; position:absolute; top:0; right:0;
+  width:48%; height:100%; background:var(--navy-mid);
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+}
 
-.hero-inner { max-width:800px; margin:0 auto; width:100%; position:relative; z-index:1; }
+.hero-inner { max-width:1100px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; position:relative; z-index:1; }
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: .5rem;
   background: rgba(232,160,32,.12); border: 1px solid rgba(232,160,32,.35);
@@ -85,6 +90,8 @@ nav {
 .hero-eyebrow::before { content:''; width:6px; height:6px; background:var(--accent); border-radius:50%; display:inline-block; }
 .hero h1 { font-family: var(--serif); font-size: clamp(2rem,3.5vw,3rem); font-weight:700; color:var(--white); line-height:1.15; letter-spacing:-.03em; margin-bottom: 1.25rem; }
 .hero h1 em { font-style:normal; color:var(--accent); }
+.hero-img { position:relative; }
+.hero-img img { width:100%; border-radius:12px; object-fit:cover; max-height:480px; box-shadow:0 32px 80px rgba(0,0,0,.5); }
 .hero-sub { color:var(--tm); font-size:.95rem; line-height:1.8; margin-bottom:2rem; max-width:460px; }
 .hero-btns { display:flex; gap:1rem; flex-wrap:wrap; }
 .btn-primary { background:var(--accent); color:var(--navy); padding:.85rem 1.8rem; border-radius:4px; font-weight:700; font-size:.95rem; text-decoration:none; display:inline-block; transition:background .2s; }
@@ -192,6 +199,7 @@ footer { background:var(--navy-crd); padding:3rem 2rem 2rem; color:var(--tm); bo
 /* MOBILE */
 @media(max-width:768px){
   .hero-inner,.bp-grid,.founder-grid { grid-template-columns:1fr; }
+  .hero-inner { grid-template-columns:1fr; }
   .hero { padding:100px 1.25rem 60px; }
   .hero::before { display:none; }
   .hero-badge { display:none; }
@@ -252,6 +260,9 @@ footer { background:var(--navy-crd); padding:3rem 2rem 2rem; color:var(--tm); bo
         <a href="#leistungen" class="btn-outline">Unsere Leistungen</a>
       </div>
     </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/images/work-smart.jpg" alt="Team Landau4Consulting">
     </div>
   </div>
 </section>
