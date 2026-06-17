@@ -148,9 +148,10 @@ section { padding: 80px 2rem; }
 /* REFERENZEN */
 .referenzen { background:var(--navy-mid); }
 .logos-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-bottom:2.5rem; }
-.logo-box { background:var(--navy-crd); border:1px solid var(--bm); border-radius:8px; padding:1.25rem; display:flex; align-items:center; justify-content:center; min-height:80px; filter:brightness(.8) grayscale(.3); transition:filter .2s; }
-.logo-box:hover { filter:brightness(1) grayscale(0); }
-.logo-box img { max-height:44px; max-width:120px; object-fit:contain; }
+.logo-box { border:1px solid var(--bm); border-radius:8px; padding:1.5rem; display:flex; align-items:center; justify-content:center; min-height:80px; transition:border-color .2s; }
+.logo-box:hover { border-color:rgba(232,160,32,.4); }
+.logo-box:hover img { opacity:1; }
+.logo-box img { max-height:44px; max-width:130px; object-fit:contain; filter:brightness(0) invert(1); opacity:.7; transition:opacity .2s; }
 
 
 
@@ -158,20 +159,20 @@ section { padding: 80px 2rem; }
 
 /* TEAM */
 .team { background:var(--navy); }
-.team-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.25rem; }
-.team-card { background:var(--navy-mid); border:1px solid var(--bm); border-radius:8px; overflow:hidden; transition:border-color .2s; }
-.team-card:hover { border-color:rgba(232,160,32,.35); }
-.team-img { width:100%; aspect-ratio:1; object-fit:cover; object-position:top; }
-.team-info { padding:1rem; }
-.team-info h4 { font-weight:700; font-size:.9rem; color:var(--white); margin-bottom:.2rem; }
-.team-info p { font-size:.78rem; color:var(--accent-lt); font-weight:500; }
+
+
+
+
+
+
+
 
 /* FOUNDER */
 .founder { background:var(--navy-mid); }
-.founder-grid { display:grid; grid-template-columns:1fr 1.6fr; gap:4rem; align-items:center; }
-.founder-img-wrap { position:relative; }
-.founder-img-wrap img { width:100%; border-radius:10px; object-fit:cover; max-height:520px; }
-.founder-img-wrap::after { content:''; position:absolute; bottom:0; left:0; right:0; height:40%; background:linear-gradient(transparent, rgba(13,27,42,.8)); border-radius:0 0 10px 10px; }
+.founder-grid { display:grid; grid-template-columns:1fr; max-width:780px; margin:0 auto; }
+
+
+
 .founder-quote { font-family:var(--serif); font-size:1.15rem; font-style:italic; color:var(--white); line-height:1.7; margin-bottom:1.5rem; padding-left:1.25rem; border-left:3px solid var(--accent); }
 .founder-name { font-weight:700; font-size:.95rem; color:var(--white); }
 .founder-role { font-size:.82rem; color:var(--accent-lt); }
@@ -205,7 +206,7 @@ footer { background:var(--navy-crd); padding:3rem 2rem 2rem; color:var(--tm); bo
   .hero-badge { display:none; }
   .leistungen-grid { grid-template-columns:1fr; }
   .logos-grid { grid-template-columns:repeat(2,1fr); }
-  .team-grid { grid-template-columns:repeat(2,1fr); }
+  
   .stats-inner { grid-template-columns:repeat(2,1fr); }
   .footer-inner { grid-template-columns:1fr; gap:2rem; }
   nav { padding:0 1rem; }
@@ -213,6 +214,7 @@ footer { background:var(--navy-crd); padding:3rem 2rem 2rem; color:var(--tm); bo
   .hamburger { display:flex; }
   section { padding:56px 1.25rem; }
   .hero-btns { flex-direction:column; }
+  .worksmart-grid { grid-template-columns:1fr; }
   .hero-btns a { text-align:center; }
 }
 
@@ -222,6 +224,10 @@ footer { background:var(--navy-crd); padding:3rem 2rem 2rem; color:var(--tm); bo
 
 
 
+
+.worksmart { background:var(--navy-mid); padding:80px 2rem; }
+.worksmart-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; max-width:1100px; margin:0 auto; }
+.worksmart-img img { width:100%; border-radius:12px; object-fit:cover; max-height:420px; box-shadow:0 24px 60px rgba(0,0,0,.4); }
 </style>
 </head>
 <body>
@@ -262,7 +268,7 @@ footer { background:var(--navy-crd); padding:3rem 2rem 2rem; color:var(--tm); bo
     </div>
     </div>
     <div class="hero-img">
-      <img src="assets/images/work-smart.jpg" alt="Team Landau4Consulting">
+      <img src="assets/images/wael-founder.png" alt="Wael Landau – Gründer Landau4Consulting">
     </div>
   </div>
 </section>
@@ -278,6 +284,21 @@ footer { background:var(--navy-crd); padding:3rem 2rem 2rem; color:var(--tm); bo
 </div>
 
 
+
+<!-- WORK SMART -->
+<section class="worksmart">
+  <div class="worksmart-grid">
+    <div class="worksmart-img">
+      <img src="assets/images/work-smart.jpg" alt="Team Landau4Consulting">
+    </div>
+    <div>
+      <div class="sec-label">Unsere Philosophie</div>
+      <h2 class="sec-title">Work Smart,<br>Not Hard</h2>
+      <p class="sec-sub">In einer Welt voller Aufgaben, Tools und To-Dos gewinnt nicht, wer mehr arbeitet — sondern wer intelligenter arbeitet. Mit Microsoft 365, KI und automatisierten Workflows schaffen wir Freiräume für das, was wirklich zählt.</p>
+      <a href="#leistungen" class="btn-primary">Unsere Leistungen entdecken</a>
+    </div>
+  </div>
+</section>
 
 <!-- BELEGPILOT FEATURED -->
 <section class="belegpilot" id="belegpilot">
@@ -381,10 +402,7 @@ footer { background:var(--navy-crd); padding:3rem 2rem 2rem; color:var(--tm); bo
 <section class="founder">
   <div class="sec-inner">
     <div class="founder-grid">
-      <div class="founder-img-wrap">
-        <img src="assets/images/wael-founder.png" alt="Wael Landau – Gründer Landau4Consulting">
-      </div>
-      <div>
+      <div style="max-width:680px;">
         <div class="sec-label">Über den Gründer</div>
         <blockquote class="founder-quote">
           "Wir helfen Unternehmen nicht einfach dabei, Software einzuführen — wir helfen ihnen, smarter zu arbeiten. Mit Microsoft 365, KI und echter Prozesskenntnis schaffen wir Lösungen, die im Alltag wirklich funktionieren."
@@ -416,38 +434,38 @@ footer { background:var(--navy-crd); padding:3rem 2rem 2rem; color:var(--tm); bo
     <div class="sec-label">Das Team</div>
     <h2 class="sec-title">Die Menschen hinter Landau4Consulting</h2>
     <p class="sec-sub">Kompetenz, Leidenschaft und Innovationsgeist — unser Team treibt Ihre Digitalisierung voran.</p>
-    <div class="team-grid">
-      <div class="team-card">
-        <img class="team-img" src="assets/images/team/wael-landau.png" alt="Wael Landau">
-        <div class="team-info"><h4>Wael Landau</h4><p>Founder & Managing Director</p></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;">
+      <div style="background:var(--navy-mid);border:1px solid var(--bm);border-radius:8px;padding:1.25rem 1.5rem;">
+        <h4 style="font-weight:700;font-size:.95rem;color:var(--white);margin-bottom:.25rem;">Wael Landau</h4>
+        <p style="font-size:.78rem;color:var(--accent-lt);font-weight:500;">Founder & Managing Director</p>
       </div>
-      <div class="team-card">
-        <img class="team-img" src="assets/images/team/rihab-hamila.png" alt="Rihab Hamila">
-        <div class="team-info"><h4>Rihab Hamila</h4><p>Power Platform Developer</p></div>
+      <div style="background:var(--navy-mid);border:1px solid var(--bm);border-radius:8px;padding:1.25rem 1.5rem;">
+        <h4 style="font-weight:700;font-size:.95rem;color:var(--white);margin-bottom:.25rem;">Rihab Hamila</h4>
+        <p style="font-size:.78rem;color:var(--accent-lt);font-weight:500;">Power Platform Developer</p>
       </div>
-      <div class="team-card">
-        <img class="team-img" src="assets/images/team/carina-lisi.png" alt="Carina Lisi">
-        <div class="team-info"><h4>Carina Lisi</h4><p>Product Owner</p></div>
+      <div style="background:var(--navy-mid);border:1px solid var(--bm);border-radius:8px;padding:1.25rem 1.5rem;">
+        <h4 style="font-weight:700;font-size:.95rem;color:var(--white);margin-bottom:.25rem;">Carina Lisi</h4>
+        <p style="font-size:.78rem;color:var(--accent-lt);font-weight:500;">Product Owner</p>
       </div>
-      <div class="team-card">
-        <img class="team-img" src="assets/images/team/Yasin.png" alt="Yasin Börner">
-        <div class="team-info"><h4>Yasin Börner</h4><p>Product Owner</p></div>
+      <div style="background:var(--navy-mid);border:1px solid var(--bm);border-radius:8px;padding:1.25rem 1.5rem;">
+        <h4 style="font-weight:700;font-size:.95rem;color:var(--white);margin-bottom:.25rem;">Yasin Börner</h4>
+        <p style="font-size:.78rem;color:var(--accent-lt);font-weight:500;">Product Owner</p>
       </div>
-      <div class="team-card">
-        <img class="team-img" src="assets/images/team/cornelia-vogel.png" alt="Cornelia Vogel-Bunke">
-        <div class="team-info"><h4>Cornelia Vogel-Bunke</h4><p>Project Manager</p></div>
+      <div style="background:var(--navy-mid);border:1px solid var(--bm);border-radius:8px;padding:1.25rem 1.5rem;">
+        <h4 style="font-weight:700;font-size:.95rem;color:var(--white);margin-bottom:.25rem;">Cornelia Vogel-Bunke</h4>
+        <p style="font-size:.78rem;color:var(--accent-lt);font-weight:500;">Project Manager</p>
       </div>
-      <div class="team-card">
-        <img class="team-img" src="assets/images/team/dania-shahadat.png" alt="Dania Shahadat">
-        <div class="team-info"><h4>Dania Shahadat</h4><p>Project Manager</p></div>
+      <div style="background:var(--navy-mid);border:1px solid var(--bm);border-radius:8px;padding:1.25rem 1.5rem;">
+        <h4 style="font-weight:700;font-size:.95rem;color:var(--white);margin-bottom:.25rem;">Dania Shahadat</h4>
+        <p style="font-size:.78rem;color:var(--accent-lt);font-weight:500;">Project Manager</p>
       </div>
-      <div class="team-card">
-        <img class="team-img" src="assets/images/team/hala-kharroubi.png" alt="Hala Kharroubi">
-        <div class="team-info"><h4>Hala Kharroubi</h4><p>Power Platform Developer</p></div>
+      <div style="background:var(--navy-mid);border:1px solid var(--bm);border-radius:8px;padding:1.25rem 1.5rem;">
+        <h4 style="font-weight:700;font-size:.95rem;color:var(--white);margin-bottom:.25rem;">Hala Kharroubi</h4>
+        <p style="font-size:.78rem;color:var(--accent-lt);font-weight:500;">Power Platform Developer</p>
       </div>
-      <div class="team-card">
-        <img class="team-img" src="assets/images/team/oleg.png" alt="Oleg Alexandrowitsch">
-        <div class="team-info"><h4>Oleg Alexandrowitsch</h4><p>Power Platform Developer</p></div>
+      <div style="background:var(--navy-mid);border:1px solid var(--bm);border-radius:8px;padding:1.25rem 1.5rem;">
+        <h4 style="font-weight:700;font-size:.95rem;color:var(--white);margin-bottom:.25rem;">Oleg Alexandrowitsch</h4>
+        <p style="font-size:.78rem;color:var(--accent-lt);font-weight:500;">Power Platform Developer</p>
       </div>
     </div>
   </div>
