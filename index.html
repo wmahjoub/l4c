@@ -21,6 +21,57 @@
 <meta name="twitter:title" content="Landau4Consulting – KI & Microsoft 365 Automatisierung">
 <meta name="twitter:description" content="Prozessautomatisierung mit Microsoft 365 und KI für den Mittelstand.">
 <meta name="twitter:image" content="https://l4c.ai/assets/images/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://l4c.ai/#organization",
+      "name": "Landau4Consulting GmbH",
+      "alternateName": "L4C",
+      "url": "https://l4c.ai/",
+      "logo": "https://l4c.ai/assets/images/logo-navy.png",
+      "description": "KI-gestützte Prozessautomatisierung mit Microsoft 365 für den Mittelstand. Copilot, SharePoint, Power Platform, Power Automate.",
+      "foundingDate": "2017",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tölzer Str. 30a",
+        "addressLocality": "Grünwald",
+        "postalCode": "82031",
+        "addressCountry": "DE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.0396,
+        "longitude": 11.5267
+      },
+      "telephone": "+49-89-693-141-100",
+      "email": "info@landau4consulting.de",
+      "areaServed": ["DE", "AT", "CH"],
+      "knowsAbout": ["Microsoft 365", "Power Platform", "KI-Automatisierung", "SharePoint", "Microsoft Copilot", "Power Automate", "Azure AI"],
+      "sameAs": ["https://www.linkedin.com/company/81356568"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://l4c.ai/#wael-landau",
+      "name": "Wael Landau",
+      "jobTitle": "Founder & Managing Director",
+      "worksFor": { "@id": "https://l4c.ai/#organization" },
+      "knowsAbout": ["Microsoft 365", "KI-Automatisierung", "Power Platform", "Azure AI"],
+      "sameAs": ["https://www.linkedin.com/company/81356568"]
+    },
+    {
+      "@type": "Service",
+      "name": "Microsoft 365 Prozessautomatisierung",
+      "description": "KI-gestützte Automatisierung manueller Geschäftsprozesse mit Microsoft 365, Power Platform und Azure AI.",
+      "provider": { "@id": "https://l4c.ai/#organization" },
+      "areaServed": ["DE", "AT", "CH"],
+      "serviceType": "IT-Beratung & Prozessautomatisierung"
+    }
+  ]
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -231,6 +282,7 @@ footer { background:var(--navy-mid); padding:3rem 2rem 2rem; color:rgba(255,255,
     <li><a href="#leistungen">Leistungen</a></li>
     <li><a href="#belegpilot">BelegPilot.ai</a></li>
     <li><a href="#referenzen">Referenzen</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="#team">Team</a></li>
     <li><a href="https://bookings.cloud.microsoft/book/BelegPilot@Landau4Consulting.de/?ismsaljsauthenabled" class="nav-cta">Erstgespräch buchen</a></li>
   </ul>
@@ -242,6 +294,7 @@ footer { background:var(--navy-mid); padding:3rem 2rem 2rem; color:rgba(255,255,
   <a href="#leistungen" onclick="closeMobileMenu()">Leistungen</a>
   <a href="#belegpilot" onclick="closeMobileMenu()">BelegPilot.ai</a>
   <a href="#referenzen" onclick="closeMobileMenu()">Referenzen</a>
+  <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
   <a href="#team" onclick="closeMobileMenu()">Team</a>
   <a href="https://bookings.cloud.microsoft/book/BelegPilot@Landau4Consulting.de/?ismsaljsauthenabled" class="mob-cta" onclick="closeMobileMenu()">Erstgespräch buchen</a>
 </div>
@@ -249,7 +302,7 @@ footer { background:var(--navy-mid); padding:3rem 2rem 2rem; color:rgba(255,255,
 <!-- HERO -->
 <section class="hero">
   <div class="hero-eyebrow">Microsoft 365 · KI · Power Platform</div>
-  <h1>Ihre Prozesse.<br><em>Automatisiert.</em><br>Mit Microsoft 365.</h1>
+  <h1>KI-gestützte Prozessautomatisierung<br>mit <em>Microsoft 365</em> —<br>für den Mittelstand.</h1>
   <p class="hero-sub">Landau4Consulting automatisiert Ihre manuellen Abläufe mit Microsoft 365 und KI — damit Ihr Team sich auf das konzentriert, was wirklich zählt. Messbar. Sicher. Nativ in Ihrer Umgebung.</p>
   <div class="hero-btns">
     <a href="https://bookings.cloud.microsoft/book/BelegPilot@Landau4Consulting.de/?ismsaljsauthenabled" class="btn-primary">Kostenloses Erstgespräch buchen</a>
@@ -303,6 +356,7 @@ footer { background:var(--navy-mid); padding:3rem 2rem 2rem; color:rgba(255,255,
           allowfullscreen>
         </iframe>
       </div>
+      <p style="margin-top:1rem;font-size:.82rem;color:var(--muted);line-height:1.6;"><strong style="color:var(--navy);">Landau4Consulting im Einsatz:</strong> Wie wir manuelle Prozesse mit Microsoft 365, Power Automate und Azure KI vollständig automatisieren — vom ersten Gespräch bis zum Go-Live in wenigen Wochen.</p>
     </div>
   </div>
 </section>
@@ -368,17 +422,17 @@ footer { background:var(--navy-mid); padding:3rem 2rem 2rem; color:rgba(255,255,
     <div class="leistungen-grid">
       <div class="leistung-card">
         <div class="leistung-cat">KI-Strategie</div>
-        <h4>Microsoft 365 Copilot</h4>
+        <h3 class="leistung-h3" style="font-family:var(--serif);font-weight:700;font-size:1.05rem;color:var(--navy);margin-bottom:.6rem;">Microsoft Copilot Einführung für Unternehmen</h3>
         <p>Copilot ist nur so gut wie die Strategie dahinter. Wir begleiten Sie von der Einführung über Governance bis zur Schulung — damit Ihre Teams KI produktiv und sicher einsetzen.</p>
       </div>
       <div class="leistung-card">
         <div class="leistung-cat">Zusammenarbeit</div>
-        <h4>SharePoint-Beratung</h4>
+        <h3 class="leistung-h3" style="font-family:var(--serif);font-weight:700;font-size:1.05rem;color:var(--navy);margin-bottom:.6rem;">SharePoint-Beratung & Intranet-Optimierung</h3>
         <p>Schluss mit Datei-Chaos und fehlenden Versionen. Wir bauen SharePoint-Strukturen, die wirklich genutzt werden — mit klaren Berechtigungen und automatisierten Prozessen.</p>
       </div>
       <div class="leistung-card">
         <div class="leistung-cat">Automatisierung</div>
-        <h4>Prozessautomatisierung</h4>
+        <h3 class="leistung-h3" style="font-family:var(--serif);font-weight:700;font-size:1.05rem;color:var(--navy);margin-bottom:.6rem;">Prozessautomatisierung mit Power Automate & PowerApps</h3>
         <p>Excel-Listen, manuelle E-Mails, fehlende Übersichten — wir ersetzen das mit PowerApps, Power Automate und Power BI. Automatisiert, mobil, messbar.</p>
       </div>
     </div>
@@ -389,8 +443,12 @@ footer { background:var(--navy-mid); padding:3rem 2rem 2rem; color:rgba(255,255,
 <section class="referenzen" id="referenzen">
   <div class="sec-inner">
     <div class="sec-label">Referenzen</div>
-    <h2 class="sec-title">Unternehmen, die uns vertrauen</h2>
+    <h2 class="sec-title">Microsoft 365 Automatisierung — bewährt bei führenden Unternehmen</h2>
     <p class="sec-sub">Von mittelständischen Familienunternehmen bis zu DAX-Konzernen — sie alle vertrauen auf Landau4Consulting.</p>
+    <div style="background:#FEF3E2;border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin-bottom:2.5rem;max-width:680px;">
+      <p style="font-family:var(--serif);font-size:1rem;font-style:italic;color:var(--navy);line-height:1.7;margin-bottom:.5rem;">"Landau4Consulting hat unsere Dokumentenprozesse in Microsoft 365 in wenigen Wochen grundlegend modernisiert — messbar effizienter, DSGVO-konform und ohne IT-Overhead."</p>
+      <span style="font-size:.78rem;font-weight:700;color:var(--accent);">Referenzkunde · Pharmaindustrie / DACH</span>
+    </div>
     <div class="logos-grid">
       <div class="logo-box"><img src="assets/images/logos/client-02.png" alt="STADA"></div>
       <div class="logo-box"><img src="assets/images/logos/aerologic.png" alt="AeroLogic"></div>
@@ -468,6 +526,122 @@ footer { background:var(--navy-mid); padding:3rem 2rem 2rem; color:rgba(255,255,
     </div>
   </div>
 </section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--bg);border-top:1px solid var(--border);padding:80px 2rem;">
+  <div class="sec-inner">
+    <div class="sec-label">FAQ</div>
+    <h2 class="sec-title">Häufige Fragen zur KI-Automatisierung mit Microsoft 365</h2>
+    <p class="sec-sub" style="margin-bottom:2.5rem;">Was CEOs und Geschäftsführer vor dem ersten Gespräch wissen wollen.</p>
+    <div style="display:flex;flex-direction:column;gap:.75rem;max-width:800px;">
+
+      <details style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.4rem;">
+        <summary style="font-weight:600;font-size:.95rem;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Was kostet eine Microsoft 365 Prozessautomatisierung im Mittelstand?
+          <span style="color:var(--accent);font-size:1.2rem;flex-shrink:0;margin-left:1rem;">+</span>
+        </summary>
+        <p style="margin-top:.9rem;font-size:.87rem;color:var(--muted);line-height:1.75;">Die Kosten hängen vom Umfang der Prozesse und dem gewünschten Automatisierungsgrad ab. In einem kostenlosen 30-minütigen Erstgespräch analysieren wir gemeinsam Ihren größten Hebel und erstellen ein transparentes, maßgeschneidertes Angebot — ohne versteckte Kosten oder langfristige Bindung.</p>
+      </details>
+
+      <details style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.4rem;">
+        <summary style="font-weight:600;font-size:.95rem;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Lohnt sich Microsoft Copilot für kleinere Unternehmen im Mittelstand?
+          <span style="color:var(--accent);font-size:1.2rem;flex-shrink:0;margin-left:1rem;">+</span>
+        </summary>
+        <p style="margin-top:.9rem;font-size:.87rem;color:var(--muted);line-height:1.75;">Ja — gerade im Mittelstand, wo jede Stunde zählt, amortisiert sich Copilot schnell. Voraussetzung ist eine solide Daten- und Governance-Strategie. Wir begleiten Sie von der Einführung bis zur produktiven Nutzung, damit Ihr Team KI effektiv einsetzt statt nur ausprobiert.</p>
+      </details>
+
+      <details style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.4rem;">
+        <summary style="font-weight:600;font-size:.95rem;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Wie lange dauert eine typische Microsoft 365 Automatisierungs-Einführung?
+          <span style="color:var(--accent);font-size:1.2rem;flex-shrink:0;margin-left:1rem;">+</span>
+        </summary>
+        <p style="margin-top:.9rem;font-size:.87rem;color:var(--muted);line-height:1.75;">Einfachere Prozessautomatisierungen mit Power Automate sind in 2–4 Wochen live. Komplexere Vorhaben wie BelegPilot oder unternehmensweite Copilot-Rollouts dauern typischerweise 4–10 Wochen. Wir starten immer mit einem Piloten, damit Sie Ergebnisse sehen, bevor Sie sich vollständig committen.</p>
+      </details>
+
+      <details style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.4rem;">
+        <summary style="font-weight:600;font-size:.95rem;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Werden Unternehmensdaten bei der KI-Automatisierung an externe Server übertragen?
+          <span style="color:var(--accent);font-size:1.2rem;flex-shrink:0;margin-left:1rem;">+</span>
+        </summary>
+        <p style="margin-top:.9rem;font-size:.87rem;color:var(--muted);line-height:1.75;">Nein. Alle unsere Lösungen laufen nativ in Ihrem eigenen Microsoft 365-Tenant. Keine externen Server, keine Datenweitergabe an Dritte. Ihre Daten bleiben in Ihrer Microsoft-Cloud — DSGVO-konform und unter Ihrer Kontrolle.</p>
+      </details>
+
+      <details style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.4rem;">
+        <summary style="font-weight:600;font-size:.95rem;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Welche Prozesse lassen sich mit Microsoft 365 und Power Platform automatisieren?
+          <span style="color:var(--accent);font-size:1.2rem;flex-shrink:0;margin-left:1rem;">+</span>
+        </summary>
+        <p style="margin-top:.9rem;font-size:.87rem;color:var(--muted);line-height:1.75;">Genehmigungsworkflows, Rechnungsverarbeitung, Dokumentenmanagement, Mitarbeiter-Onboarding, Reporting und Dashboards, Kundenanfragen-Routing, interne Ticketsysteme und vieles mehr. Wenn ein Prozess heute manuell in Excel, E-Mail oder Papier stattfindet, ist er ein Automatisierungskandidat.</p>
+      </details>
+
+      <details style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.4rem;">
+        <summary style="font-weight:600;font-size:.95rem;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Benötigt mein Unternehmen eine eigene IT-Abteilung für die Einführung?
+          <span style="color:var(--accent);font-size:1.2rem;flex-shrink:0;margin-left:1rem;">+</span>
+        </summary>
+        <p style="margin-top:.9rem;font-size:.87rem;color:var(--muted);line-height:1.75;">Nein. Wir deployen direkt in Ihrem bestehenden Microsoft 365-Tenant — ohne IT-Projekt, ohne neue Infrastruktur. Unsere Lösungen erfordern keine tiefgreifenden IT-Kenntnisse beim Kunden. Wir übernehmen Implementierung, Schulung und laufenden Support.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was kostet eine Microsoft 365 Prozessautomatisierung im Mittelstand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Kosten hängen vom Umfang der Prozesse ab. In einem kostenlosen 30-minütigen Erstgespräch analysieren wir gemeinsam Ihren größten Hebel und erstellen ein maßgeschneidertes Angebot ohne versteckte Kosten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lohnt sich Microsoft Copilot für kleinere Unternehmen im Mittelstand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — gerade im Mittelstand amortisiert sich Copilot schnell. Voraussetzung ist eine solide Daten- und Governance-Strategie. Landau4Consulting begleitet von der Einführung bis zur produktiven Nutzung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie lange dauert eine typische Microsoft 365 Automatisierungs-Einführung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Einfachere Prozessautomatisierungen mit Power Automate sind in 2–4 Wochen live. Komplexere Vorhaben dauern typischerweise 4–10 Wochen. Wir starten immer mit einem Piloten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werden Unternehmensdaten bei der KI-Automatisierung an externe Server übertragen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Alle Lösungen laufen nativ im eigenen Microsoft 365-Tenant des Kunden. Keine externen Server, keine Datenweitergabe — DSGVO-konform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Prozesse lassen sich mit Microsoft 365 und Power Platform automatisieren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Genehmigungsworkflows, Rechnungsverarbeitung, Dokumentenmanagement, Onboarding, Reporting, Ticketsysteme und vieles mehr. Wenn ein Prozess heute in Excel, E-Mail oder Papier stattfindet, ist er ein Automatisierungskandidat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Benötigt mein Unternehmen eine eigene IT-Abteilung für die Einführung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Landau4Consulting deployed direkt im bestehenden Microsoft 365-Tenant — ohne IT-Projekt, ohne neue Infrastruktur. Implementierung, Schulung und Support werden vollständig übernommen."
+      }
+    }
+  ]
+}
+</script>
 
 <!-- CTA -->
 <section class="cta-sec" id="kontakt">
