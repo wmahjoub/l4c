@@ -207,6 +207,11 @@ section { padding: 80px 2rem; }
 .founder-badge { background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:.75rem 1rem; font-size:.82rem; }
 .founder-badge strong { display:block; font-size:.9rem; color:var(--navy); font-weight:700; margin-bottom:.1rem; }
 .founder-badge span { color:var(--muted); }
+.founder-grid { display:grid; grid-template-columns:0.95fr 1.15fr; gap:2.5rem; align-items:center; max-width:1000px; margin:0 auto; }
+.founder-img-wrap { position:relative; border-radius:10px; overflow:hidden; border:1px solid var(--border); }
+.founder-img-wrap img { width:100%; height:auto; display:block; }
+.founder-img-caption { position:absolute; bottom:0; left:0; right:0; padding:.6rem 1rem; font-size:.76rem; font-weight:600; color:var(--white); background:linear-gradient(transparent, rgba(13,27,42,.85)); }
+@media (max-width: 768px) { .founder-grid { grid-template-columns:1fr; } }
 
 /* CTA */
 .cta-sec { background:var(--navy); padding:80px 2rem; }
@@ -511,17 +516,23 @@ footer { background:var(--navy-mid); padding:3rem 2rem 2rem; color:rgba(255,255,
 <!-- FOUNDER -->
 <section class="founder">
   <div class="sec-inner">
-    <div class="founder-inner">
-      <div class="sec-label">Über den Gründer</div>
-      <blockquote class="founder-quote">
-        "Unsere Kunden kaufen keine Software — sie kaufen Ergebnisse. Weniger manuelle Arbeit, schnellere Prozesse, mehr Kontrolle. Das ist unser Versprechen."
-      </blockquote>
-      <div class="founder-name">Wael Landau</div>
-      <div class="founder-role">Gründer & Geschäftsführer, Landau4Consulting GmbH</div>
-      <div class="founder-badges">
-        <div class="founder-badge"><strong>Microsoft 365</strong><span>Certified Expert</span></div>
-        <div class="founder-badge"><strong>Power Platform</strong><span>Solution Architect</span></div>
-        <div class="founder-badge"><strong>Azure AI</strong><span>Implementation Lead</span></div>
+    <div class="sec-label" style="text-align:center;">Über den Gründer</div>
+    <div class="founder-grid">
+      <div class="founder-img-wrap">
+        <img src="assets/images/wael-fiberdays26.jpg" alt="Wael Landau hält einen Vortrag zu KI-Automatisierung auf der fiberdays26" loading="lazy">
+        <span class="founder-img-caption">Speaker auf der fiberdays26</span>
+      </div>
+      <div class="founder-inner" style="max-width:none; text-align:left;">
+        <blockquote class="founder-quote">
+          "Unsere Kunden kaufen keine Software — sie kaufen Ergebnisse. Weniger manuelle Arbeit, schnellere Prozesse, mehr Kontrolle. Das ist unser Versprechen."
+        </blockquote>
+        <div class="founder-name">Wael Landau</div>
+        <div class="founder-role">Founder & Managing Director, Landau4Consulting GmbH</div>
+        <div class="founder-badges">
+          <div class="founder-badge"><strong>Microsoft 365</strong><span>Certified Expert</span></div>
+          <div class="founder-badge"><strong>Power Platform</strong><span>Solution Architect</span></div>
+          <div class="founder-badge"><strong>Azure AI</strong><span>Implementation Lead</span></div>
+        </div>
       </div>
     </div>
   </div>
